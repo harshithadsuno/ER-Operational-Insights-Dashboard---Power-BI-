@@ -1,8 +1,7 @@
 # ER Operational Insights Dashboard
 
 **File:** `ER_Operational_Insights_Dashboard.pbix`  
-**Tool:** Microsoft Power BI Desktop (version 2.152.856.0 or later)  
-**Created:** April 2026 · Cloud-authored report  
+**Tool:** Microsoft Power BI Desktop (version 2.152.856.0 or later)   
 
 ---
 
@@ -175,16 +174,3 @@ All four pages share a **page navigator** menu (labelled "Menu") and three brand
 3. If prompted about a live connection, sign in with a Power BI account that has access to the source dataset, or import the data locally if the dataset has been exported separately.
 
 > **Note:** Because this report references a remote Power BI Service dataset, visuals will not populate without an active connection to that dataset or a locally loaded data model.
-
----
-
-## File Contents (internal structure)
-
-| Component | Description |
-|---|---|
-| `Report/Layout` | All page layouts, visuals, and configurations |
-| `DataModel` | Embedded data model (~600 KB) |
-| `Report/StaticResources/` | Theme JSON and branding images (logo, GitHub icon) |
-| `Connections` | Reference to remote Power BI dataset |
-| `Settings` | Report-level query and relationship settings |
-| `Metadata` | Authoring version and creation metadata |
