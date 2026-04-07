@@ -2,6 +2,7 @@
 
 **File:** `ER_Operational_Insights_Dashboard.pbix`  
 **Tool:** Microsoft Power BI Desktop (version 2.152.856.0 or later)  
+**Created:** April 2026 · Cloud-authored report  
 
 ---
 
@@ -49,6 +50,8 @@ The report connects to a remote Power BI dataset (`DatasetId: d1aa60f8-f46b-4d03
 ## Report Pages
 
 ### 1. Monthly View
+![Monthly View](MV.png)
+
 Drill into a single selected month and year. Slicers let the user filter by **Year** and **Month**, with all visuals updating to reflect the chosen period.
 
 **KPI Cards:**
@@ -75,6 +78,8 @@ Drill into a single selected month and year. Slicers let the user filter by **Ye
 ---
 
 ### 2. Consolidated View
+![Consolidated View](CV.png)
+
 A full date-range view with a **date range slicer** spanning the entire dataset. All the same breakdown charts as the Monthly View are present, but trend charts are aggregated by **month** rather than by day, enabling multi-month comparison.
 
 **Trend Charts (column charts by month):**
@@ -171,3 +176,15 @@ All four pages share a **page navigator** menu (labelled "Menu") and three brand
 
 > **Note:** Because this report references a remote Power BI Service dataset, visuals will not populate without an active connection to that dataset or a locally loaded data model.
 
+---
+
+## File Contents (internal structure)
+
+| Component | Description |
+|---|---|
+| `Report/Layout` | All page layouts, visuals, and configurations |
+| `DataModel` | Embedded data model (~600 KB) |
+| `Report/StaticResources/` | Theme JSON and branding images (logo, GitHub icon) |
+| `Connections` | Reference to remote Power BI dataset |
+| `Settings` | Report-level query and relationship settings |
+| `Metadata` | Authoring version and creation metadata |
